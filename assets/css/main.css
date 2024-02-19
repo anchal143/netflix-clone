@@ -1,0 +1,631 @@
+/* common css */
+
+body {
+    background-color: #000;
+    margin: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.anc_hr {
+    margin: 0;
+    background-color: rgb(35, 35, 35);
+    height: 6px;
+    border: 1px solid rgb(35, 35, 35);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: white;
+}
+
+
+/* header section */
+
+.anc_header {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+.head_maindiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: calc(83.33333333333334% - 6rem);
+    margin-top: 23px;
+}
+
+.logodiv img {
+    width: 150px;
+}
+
+.menudiv {
+    display: flex;
+}
+
+.slang {
+    margin-right: 20px;
+    border: 1px solid gray;
+    background: rgb(15 19 20 / 50%);
+    color: white;
+    border-radius: 4px;
+    width: 125px;
+    height: 32px;
+    padding: 0 12px 0 12px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button.signInbtn {
+    background: rgb(229, 9, 20);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    padding: 0 10px 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 75px;
+    height: 32px;
+}
+
+
+/* banner section */
+
+.anc_banner {
+    height: 710px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.anc_banner img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.25) translateY(-10%);
+    object-fit: cover;
+}
+
+.banner_content {
+    position: absolute;
+    top: 37%;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner_content h1 {
+    font-size: 50px;
+    margin: 0 0 20px 0;
+}
+
+.banner_content h6 {
+    font-size: 24px;
+    margin: 0 0 0 0;
+    font-weight: normal;
+}
+
+.banner_content p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.myfrm {
+    width: 64%;
+    display: flex;
+    justify-content: center;
+}
+
+input.myemail {
+    height: 41px;
+    padding: 5px 10px 4px 10px;
+    position: relative;
+    width: 36%;
+    border-radius: 4px;
+    border: 0 solid transparent;
+    background: rgba(70, 90, 126, 0.4);
+    bottom: 0px;
+    color: white;
+    margin-right: 15px;
+    font-size: 19px;
+}
+
+input.myemail:focus-visible {
+    border: 0 solid transparent;
+    outline: none;
+}
+
+button.mybtn-1 {
+    background: rgb(229, 9, 20);
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    border: none;
+    padding: 0 10px 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 210px;
+    height: 50px;
+}
+
+.anc_overlaybg {
+    background: rgb(0 0 0 / 40%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* body part css */
+
+.anc_sec {
+    margin-bottom: 65px;
+    margin-top: 60px;
+}
+
+.anc_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anc_right {
+    position: relative;
+}
+
+.mytvvideo {
+    position: absolute;
+    right: 0;
+    width: 420px;
+    left: 75px;
+    top: 88px;
+    z-index: -1;
+}
+
+.mytvvideo1 {
+    position: absolute;
+    right: 0;
+    width: 350px;
+    left: 110px;
+    top: 58px;
+    z-index: -1;
+}
+
+.anc_right img {
+    width: 89%;
+}
+
+.anc_left {
+    width: 36%;
+}
+
+.anc_left h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.anc_left p {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.anc_strange {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 36px;
+    left: 131px;
+    border-radius: 15px;
+    border: 1px solid #838080;
+    background: #000;
+    padding: 12px;
+}
+
+.anc_strange img {
+    padding-right: 15px;
+    width: 50px;
+}
+
+.str_cnt {
+    margin-right: 55px;
+}
+
+.str_cnt p {
+    margin: 0;
+}
+
+.downgif {
+    padding-right: 0 !important;
+}
+
+.str_cnt p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.str_cnt p:nth-child(2) {
+    font-size: 14px;
+    color: #2a2af2;
+}
+
+.faq_cnt {
+    max-width: calc(83.33333333333334% - 6rem);
+    margin: auto;
+}
+
+.faq_cnt h1 {
+    font-size: 48px;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.faq_sec {
+    margin-bottom: 9px;
+}
+
+h4.faq_q {
+    display: flex;
+    background: #2d2d2d;
+    padding: 4px 15px 5px 15px;
+    letter-spacing: 1px;
+    height: 75px;
+    font-size: 24px;
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h4.faq_q:hover {
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background-color: rgb(65, 65, 65);
+}
+
+h4.faq_q span:nth-child(2) {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.faq_ans {
+    margin: 1px 0 7px;
+    background: #2d2d2d;
+    padding: 4px 15px 5px 15px;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: normal;
+    cursor: pointer;
+    display: none;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.form2 p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.form2 .myemail {
+    width: 48%;
+}
+
+
+/* footer css */
+
+.anc_footer {
+    margin-bottom: 72px;
+    margin-top: 60px;
+}
+
+.footer_cnt {
+    max-width: calc(83.33333333333334% - 6rem);
+    margin: auto;
+}
+
+.call_me {
+    color: rgb(255 255 255 / 70%);
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.footer_cnt a,
+.footer_cnt p {
+    color: rgb(255 255 255 / 70%);
+}
+
+.footer_link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_link ul li {
+    display: inline-block;
+    width: 24%;
+    margin-bottom: 15px;
+}
+
+.fslang {
+    margin-right: 20px;
+    border: 1px solid gray;
+    background: rgb(24 27 28 / 76%);
+    color: white;
+    border-radius: 4px;
+    width: 125px;
+    height: 32px;
+    padding: 0 12px 0 12px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.copyright p {
+    margin-bottom: 0;
+}
+
+
+/* mobile view style */
+
+@media(max-width:768px) {
+    .anc_sec {
+        margin-bottom: 65px;
+        margin-top: 56px;
+    }
+    .head_maindiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: calc(92.333333% - 0rem);
+        margin-top: 20px;
+    }
+    .logodiv img {
+        width: 98px;
+    }
+    .slang {
+        margin-right: 7px;
+        border: 1px solid gray;
+        background: rgb(15 19 20 / 50%);
+        color: white;
+        border-radius: 4px;
+        width: 100px;
+        height: 32px;
+        padding: 0 12px 0 12px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .anc_banner {
+        height: 480px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .anc_banner img {
+        width: auto;
+        height: 100%;
+        transform: none;
+        object-fit: cover;
+    }
+    .banner_content {
+        position: absolute;
+        top: 24%;
+        color: white;
+        text-align: center;
+        padding: 0 0;
+        max-width: calc(89.333333% - 0rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 25px;
+    }
+    .banner_content h1 {
+        font-size: 36px;
+        margin: 0 0 10px 0;
+    }
+    .banner_content h6 {
+        font-size: 19px;
+        margin: 0 0 0 0;
+        font-weight: normal;
+    }
+    .banner_content p {
+        font-size: 19px;
+        font-weight: normal;
+    }
+    .myfrm {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    input.myemail {
+        height: 41px;
+        padding: 5px 10px 4px 10px;
+        position: relative;
+        width: 88%;
+        border-radius: 4px;
+        border: 0 solid transparent;
+        background: rgba(70, 90, 126, 0.4);
+        bottom: 0px;
+        color: white;
+        margin-right: 0;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    button.mybtn-1 {
+        background: rgb(229, 9, 20);
+        color: white;
+        font-size: 18px;
+        border: none;
+        padding: 0 10px 0 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        width: 170px;
+        height: 46px;
+    }
+    .anc_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .anc_left {
+        width: 90%;
+        text-align: center;
+    }
+    .anc_left h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+    .anc_left p {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    .anc_right {
+        position: relative;
+        text-align: center;
+    }
+    .anc_right img {
+        width: 90%;
+    }
+    .mytvvideo {
+        position: absolute;
+        right: 0;
+        width: 352px;
+        left: 90px;
+        top: 75px;
+        z-index: -1;
+    }
+    .mytvvideo1 {
+        position: absolute;
+        right: 0;
+        width: 293px;
+        left: 119px;
+        top: 46px;
+        z-index: -1;
+    }
+    .faq_cnt {
+        max-width: calc(90.333333% - 0rem);
+        margin: auto;
+    }
+    .faq_cnt h1 {
+        font-size: 32px;
+        margin: 0 0 25px 0;
+        text-align: center;
+    }
+    h4.faq_q {
+        display: flex;
+        background: #2d2d2d;
+        padding: 4px 15px 5px 15px;
+        letter-spacing: 1px;
+        height: 58px;
+        font-size: 18px;
+        margin: 0;
+        font-weight: normal;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .faq_ans {
+        margin: 1px 0 7px;
+        background: #2d2d2d;
+        padding: 4px 15px 5px 15px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: normal;
+        cursor: pointer;
+        display: none;
+    }
+    h4.faq_q span:nth-child(2) {
+        font-size: 38px;
+        font-weight: normal;
+    }
+    .anc_sec2 .anc_content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .anc_strange {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 30px;
+        left: 119px;
+        border-radius: 15px;
+        border: 1px solid #838080;
+        background: #000;
+        padding: 8px 10px;
+    }
+    .str_cnt p:nth-child(1) {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .str_cnt p:nth-child(2) {
+        font-size: 13px;
+        color: #2a2af2;
+        text-align: left;
+    }
+    .str_cnt {
+        margin-right: 80px;
+    }
+    .anc_sec2 .anc_strange img.downgif {
+        width: 45px;
+    }
+    .anc_strange img {
+        width: 30px;
+    }
+    .form2 p {
+        font-size: 19px;
+        font-weight: normal;
+        text-align: center;
+        padding: 0 14px;
+    }
+    .form2 .myemail {
+        width: 90%;
+    }
+    .footer_link ul li a {
+        font-size: 14px;
+    }
+    .call_me {
+        color: rgb(255 255 255 / 70%);
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .copyright p {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    .footer_cnt {
+        max-width: calc(90% - 0rem);
+        margin: auto;
+    }
+    .footer_link ul li {
+        display: inline-block;
+        width: 49%;
+        margin-bottom: 15px;
+    }
+}
